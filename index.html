@@ -1,23 +1,18 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Submundo da programação</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="fonte-monster/_Green Energy.ttf" rel="stylesheet" />
+    <title>Submundo da Programação - Site de exemplo</title>
     <link rel="stylesheet" href="style.css" />
   </head>
+  
   <body>
     <header>
       <div class="logo">Plataforma de Aulas - Jogos Digitais</div>
       <nav>
         <ul>
-          <li><a href="#inicio">Santuário do Programador</a></li>
-          <li><a href="#sobre">Manifesto do Código</a></li>
-          <li><a href="#contato">Invocando a Partir da Programação</a></li>
+          <li><a href="#contato">Invocando nas Trevas</a></li>
         </ul>
       </nav>
     </header>
@@ -25,7 +20,7 @@
     <main>
       <section class="hero" id="inicio">
         <div class="hero-content">
-          <h1>A Noite É Nossa</h1>
+          <h1>A Noite é Nossa</h1>
           <p>Catedral do Metal &amp; Consumo Energético</p>
         </div>
       </section>
@@ -58,14 +53,32 @@
             trilha sonora perfeita para a desolação contemporânea.
           </p>
         </div>
+
+<div class="terminal-window">
+  <div class="terminal-header">
+    <span class="dot red"></span>
+    <span class="dot yellow"></span>
+    <span class="dot green"></span>
+    <span class="terminal-title">fonte monster — css</span>
+  </div>
+  <div class="terminal-body">
+    <pre><code>@font-face {
+  font-family: "Green Energy";
+  src:
+    url("Green Energy.ttf") format("truetype"),
+    url("https://static.wfonts.com/data/2016/05/22/green-energy/Green%20Energy.ttf") format("truetype");
+  font-display: swap;
+}</code></pre>
+  </div>
+</div>
       </section>
     </main>
 
     <footer id="contato">
       <p>
-        &copy; 2026 Domínio murillohq. Todos os direitos reservados nas trevas.
-        Esse site foi criado para ser usado de referencia para a versão final do
-        projeto
+        &copy; 2026 Domínio murillohq. Todos os direitos reservados nas trevas.<br>
+        Esse site foi criado para ser usado de referência para a versão final do
+        projeto.
       </p>
     </footer>
 
@@ -74,7 +87,6 @@
 
       const toggleHeaderVisibility = () => {
         if (!header) return;
-
         if (window.scrollY > 60) {
           header.classList.add("header-hidden");
         } else {
